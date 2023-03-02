@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 	<head>
 		<title>Awareness on mental illness and discrimination</title>
 		<meta charset="utf-8" />
@@ -43,7 +43,7 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
+							<div class="logo"><img src="images/mental-health-logo.jpg" width="30%" height="30%"/></div>
 							<h2>Awareness on mental illness and discrimination </h2>
 							<!-- <p>This is a testing thing</p> -->
 							<li>Abhijit Temkar</li>
@@ -73,19 +73,21 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/poster1.jpeg" alt="" /></a>
 									<div class="content">
 										<html>
+											<h2 class="major">Overall Charitable Landscape </h2>
 										<head>
 											<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 											<script type="text/javascript">
 
 
-
 $(document).ready(function(){
   $("#economic").click(function(){
+
+	
     $("#econ_desc").slideToggle(); // toggle economic description when button is clicked
-    $("#soc_desc, #tech_desc, #imp_desc").slideUp(); // hide other descriptions
+	$("#soc_desc, #tech_desc, #imp_desc").slideUp(); // hide other descriptions
   });
 
   $("#social").click(function(){
@@ -106,9 +108,11 @@ $(document).ready(function(){
 
    </script>
 										</head>
+
+										
 										<body>
 
-											
+										
 
 										<button id="economic" style="float: left; width: 100%; display: block; ">Economic Trends <span class="fas fa-caret-right"></span></button><br><br>           <!-- create collapsible buttons for each topic -->
 										<div id="econ_desc" style="text-align: justify; display: none;">                      <!-- hide all descriptions by default -->
@@ -157,7 +161,7 @@ $(document).ready(function(){
 											<p>Overall, Canadians tend to have a positive view of giving to charities, with surveys indicating that the majority of Canadians view charitable giving as an important part of their personal values and beliefs (Imagine Canada, 2020). However, there is also some skepticism around the effectiveness and transparency of charities, with many Canadians expressing concern about where their donations are going and how they are being used. This has led to a growing emphasis on transparency and accountability in the charitable sector, as well as increased scrutiny of charitable organizations by both the public and regulatory bodies.</p>
 										</div>
 
-										<button id="tech" style="float: left; width: 100%; display: block; ">Technological Trends <span class="fas fa-caret-down"></span></button><br><br>
+										<button id="tech" style="float: left; width: 100%; display: block; ">Technological Trends <span class="fas fa-caret-right"></span></button><br><br>
 										<div id="tech_desc" style="text-align: justify; display: none;">                        <!-- hide all descriptions by default -->
 											<p>Technology has had a significant impact on how Canadians donate to charities and non-profit organizations. Online giving platforms have made it easier and more convenient for Canadians to donate to causes they care about, regardless of their location or schedule. In addition, social media has become an increasingly popular way for Canadians to learn about and engage with charitable causes, with many organizations using social media platforms to promote their campaigns and connect with potential donors.</p>
 											<p>Mobile giving has also become more prevalent in recent years, with many Canadians using their smartphones and other mobile devices to donate to charities on-the-go. This has made it easier for Canadians to support causes they care about in real-time, such as in response to natural disasters or other emergencies.</p>
@@ -165,7 +169,7 @@ $(document).ready(function(){
 											<p>Overall, technology has made charitable giving more accessible, convenient, and interactive for Canadians. It has also opened up new avenues for engagement and collaboration between charities and their supporters, enabling more creative and effective approaches to fundraising and advocacy. As technology continues to evolve, it is likely that we will see even more innovation in the charitable sector and new ways for Canadians to support the causes they care about.</p>
 										</div>
 
-										<button id="implication" style="float: left; width: 100%; display: block; ">Implications/Areas of Opportunity <span class="fas fa-caret-down"></span></button><br><br>
+										<button id="implication" style="float: left; width: 100%; display: block; ">Implications/Areas of Opportunity <span class="fas fa-caret-right"></span></button><br><br>
 										<div id="imp_desc" style="text-align: justify; display: none;">                          <!-- hide all descriptions by default -->
 											<p>Through this analysis, several observations can be made that have implications for the philanthropic area of mental health and addiction support, which is the focus of our team's chosen charity, The Centre for Addiction and Mental Health (CAMH).</p>
 											<p>Firstly, there is a growing recognition of the importance of mental health and social justice causes in the charitable market, which may present opportunities for CAMH to increase its visibility and engagement with potential donors. However, it is important for CAMH to be proactive in communicating its mission and impact to potential donors, and to develop creative and innovative approaches to fundraising and advocacy that resonate with these causes.</p>
@@ -181,60 +185,79 @@ $(document).ready(function(){
 							</section>
 
 						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<html>
-										<head>
-											<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-											<script type="text/javascript">
+						<section id="three" class="wrapper spotlight style3">
+							<div class="inner">
+								<a href="#" class="image"><img src="images/analysis_graph.jpeg" alt="" /></a>
+								<div class="content">
+									<html>
+									<head>
+										<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+										<script type="text/javascript">
+                        $(document).ready(function(){
+                          $("#charitable").click(function(){
+                            $("#ch_desc").slideToggle(); // toggle economic description when button is clicked
+                            $("#don_desc, #sit_desc, #tar_desc").slideUp(); // hide other descriptions
+                            $(".charitable-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
+                          });
 
+                          $("#donations").click(function(){
+                            $("#don_desc").slideToggle(); // toggle social description when button is clicked
+                            $("#ch_desc, #sit_desc, #tar_desc").slideUp(); // hide other descriptions
+                            $(".donations-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
+                          });
 
-$(document).ready(function(){
-  $("#charitable").click(function(){
-    $("#ch_desc").slideToggle(); // toggle economic description when button is clicked
-    $("#don_desc, #sit_desc, #tar_desc").slideUp(); // hide other descriptions
-  });
+                          $("#situation").click(function(){
+                            $("#sit_desc").slideToggle(); // toggle technological description when button is clicked
+                            $("#don_desc, #ch_desc, #tar_desc").slideUp(); // hide other descriptions
+                            $(".situation-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
+                          });
 
-  $("#donations").click(function(){
-    $("#don_desc").slideToggle(); // toggle social description when button is clicked
-    $("#ch_desc, #sit_desc, #tar_desc").slideUp(); // hide other descriptions
-  });
-
-  $("#situation").click(function(){
-    $("#sit_desc").slideToggle(); // toggle technological description when button is clicked
-    $("#don_desc, #ch_desc, #tar_desc").slideUp(); // hide other descriptions
-  });
-
-  $("#target").click(function(){
-    $("#tar_desc").slideToggle(); // toggle implications/areas of opportunity description when button is clicked
-    $("#don_desc, #sit_desc, #ch_desc").slideUp(); // hide other descriptions
-  });
-});
-   </script>
-										</head>
-										<body>
-										<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-										<button id="charitable" style="float: left; width: 100%; display: block;" >Charitable Description <span class="fas fa-caret-down"></span></button><br><br>           <!-- create collapsible buttons with downward arrow for each topic -->
-										<div id="ch_desc" style="text-align: justify; display: none;" >                      <!-- hide all descriptions by default -->
-											<p>Our team has chosen The Centre for Addiction and Mental Health (CAMH) charity as our philanthropic area. CAMH is Canada's largest mental health and addiction teaching hospital, as well as one of the world's leading research centres in the field of mental health. CAMH provides a wide range of services and programs, including clinical care, research, education, and advocacy, with the goal of improving the lives of people affected by mental illness and addiction.</p>
-											<p>The gap we are trying to fill is the lack of access to high-quality mental health care and support services for individuals and communities across Canada. Mental health issues continue to be stigmatized and discriminated against in society, which can lead to further marginalization of those who are living with these conditions. As a result, many Canadians do not have access to the care and support they need to manage their mental health and achieve their full potential.</p>
-											<p>Our team believes that CAMH is uniquely positioned to address this gap through its comprehensive range of programs and services, as well as its commitment to advancing knowledge and understanding of mental health and addiction through research and education. By supporting CAMH, we hope to contribute to a more equitable and accessible mental health care system in Canada, and to improve the lives of individuals and communities affected by mental illness and addiction.</p>
-										</div>
-										
-										<button id="donations" style="float: left; width: 100%; display: block; ">Donations <span class="fas fa-caret-down"></span></button><br><br>
-										<div id="don_desc" style="text-align: justify; display: none;">                           <!-- hide all descriptions by default -->
-											<p>According to CAMH's annual reports, the charity has seen a steady increase in donations over the past five years. In 2016-2017, CAMH received $27.3 million in donations, while in 2020-2021, it received $45.2 million, representing a significant increase in giving over this period.</p>
-											<p>This growth in donations can be attributed to a number of factors, including increased awareness of mental health issues and the importance of supporting organizations like CAMH that provide critical care and services in this area. Additionally, CAMH has been proactive in developing innovative fundraising strategies, such as its One Brave Night campaign, which encourages Canadians to raise funds and awareness for mental health by staying up all night.</p>
-											<p>Overall, the donation trends to CAMH over the past five years suggest that there is growing attention and support for mental health causes in Canada, and that CAMH is well-positioned to capitalize on this trend through its comprehensive range of programs and services.</p>
-										</div>
-
-										</body>
-										</html>
+                          $("#target").click(function(){
+                            $("#tar_desc").slideToggle(); // toggle implications/areas of opportunity description when button is clicked
+                            $("#don_desc, #sit_desc, #ch_desc").slideUp(); // hide other descriptions
+                            $(".target-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
+                          });
+                        });
+                    </script>
+									</head>
+									<body>
+									<h2 class="major">Charity (NFP) Analysis </h2>
+									<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+									<button id="charitable" style="float: left; width: 100%; display: block;">
+										Charitable Description
+										<span class="fas fa-caret-right charitable-arrow"></span>
+									</button>
+									<br><br>
+									<div id="ch_desc" style="text-align: justify; display: none;">
+										<p>Our team has chosen The Centre for Addiction and Mental Health (CAMH) charity as our philanthropic area. CAMH is Canada's largest mental health and addiction teaching hospital, as well as one of the world's leading research centres in the field of mental health. CAMH provides a wide range of services and programs, including clinical care, research, education, and advocacy, with the goal of improving the lives of people affected by mental illness and addiction.</p>
+										<p>The gap we are trying to fill is the lack of access to high-quality mental health care and support services for individuals and communities across Canada. Mental health issues continue to be stigmatized and discriminated against in society, which can lead to further marginalization of those who are living with these conditions. As a result, many Canadians do not have access to the care and support they need to manage their mental health and achieve their full potential.</p>
+										<p>Our team believes that CAMH is uniquely positioned to address this gap through its comprehensive range of programs and services, as well as its commitment to advancing knowledge and understanding of mental health and addiction through research and education. By supporting CAMH, we hope to contribute to a more equitable and accessible mental health care system in Canada, and to improve the lives of individuals and communities affected by mental illness and addiction.</p>
 									</div>
+
+									<button id="donations" style="float: left; width: 100%; display: block; ">
+										Donations
+										<span class="fas fa-caret-right donations-arrow"></span>
+									</button>
+									<br><br>
+									<div id="don_desc" style="text-align: justify; display: none;">
+										<p>According to CAMH's annual reports, the charity has seen a steady increase in donations over the past five years. In 2016-2017, CAMH received $27.3 million in donations, while in 2020-2021, it received $45.2 million, representing a significant increase in giving over this period.</p>
+										<p>This growth in donations can be attributed to a number of factors, including increased awareness of mental health issues and the importance of supporting organizations like CAMH that provide critical care and services in this area. Additionally, CAMH has been proactive in developing innovative fundraising strategies, such as its One Brave Night campaign, which encourages Canadians to raise funds and awareness for mental health by staying up all night.</p>
+										<p>Overall, the donation trends to CAMH over the past five years suggest that there is growing attention and support for mental health causes in Canada, and that CAMH is well-positioned to capitalize on this trend through its comprehensive range of programs and services.</p>
+									</div>
+									</body>
+									</html>
 								</div>
-							</section>
+							</div>
+						</section>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -261,10 +284,11 @@ function toggleCollapsible(elementId) {
 
 						<section id="two" class="wrapper alt spotlight style2">
 							<div class="inner">
-								<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="#" class="image"><img src="images/ppp_analysis.png" alt="" /></a>
 								<div class="content">
 
-									<h2>The Situational Analysis</h2>
+									<h2 class="major">The Situational Analysis</h2>
+									
 
 									<button type="button" onclick="toggleCollapsible('past')" style="float: left; width: 100%; display: block;">Past <span class="fas fa-caret-down"></span></button>
 									<div id="past" class="collapsible-content" style="text-align: justify; display: none;">
@@ -292,7 +316,7 @@ function toggleCollapsible(elementId) {
 						<!-- Five -->
 						<section id="five" class="wrapper spotlight style3">
 							<div class="inner">
-								<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+								<a href="#" class="image"><img src="images/target-audience.jpeg" alt="" /></a>
 								<div class="content">
 									<div>
 										<button type="button" onclick="myFunction11()" style="float: left; width: 100%; display: block; ">Potential Obstacles <span class="fas fa-caret-down"></span></button>
@@ -352,10 +376,10 @@ function hideAll() {
 
 						<section id="two" class="wrapper alt spotlight style2">
 							<div class="inner">
-								<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="#" class="image"><img src="images/competetive.png" alt="" /></a>
 								<div class="content">
 
-									<h2>Competitive Considerations</h2>
+									<h2 class="major">Competitive Considerations</h2>
 
 
 									<div>
@@ -419,7 +443,7 @@ function hideAll() {
 						<!-- Seven -->
 						<section id="three" class="wrapper spotlight style3">
 							<div class="inner">
-								<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+								<a href="#" class="image"><img src="images/challenge.jpeg" alt="" /></a>
 								<div class="content">
 
 									<h2 class="major">The Creative Challenge</h2>
@@ -453,7 +477,7 @@ function myFunction1() {
 
 						<section id="two" class="wrapper alt spotlight style2">
 							<div class="inner">
-								<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="#" class="image"><img src="images/recc.jpeg" alt="" /></a>
 								<div class="content">
 									<h2 class="major">Recommendations </h2>
 
@@ -509,15 +533,15 @@ function myFunction1() {
 							</form>
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Untitled Inc<br />
+									Sheridan College<br />
 									1234 Somewhere Road Suite #2894<br />
 									Nashville, TN 00000-0000
 								</li>
 								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<li class="icon solid fa-envelope"><a href="#">information@sheridan.com</a></li>
+								<li class="icon brands fa-twitter"><a href="#">twitter.com/</a></li>
+								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram.com/</a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
