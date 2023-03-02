@@ -7,6 +7,7 @@
 <html xmlns="http://www.w3.org/1999/html">
 	<head>
 		<title>Awareness on mental illness and discrimination</title>
+		<link rel="icon" type="image/x-icon" href="images/mental-health-logo.jpg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -84,23 +85,25 @@
 
 $(document).ready(function(){
   $("#economic").click(function(){
-
-	
+	$(".economic-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
     $("#econ_desc").slideToggle(); // toggle economic description when button is clicked
 	$("#soc_desc, #tech_desc, #imp_desc").slideUp(); // hide other descriptions
   });
 
   $("#social").click(function(){
+	$(".social-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
     $("#soc_desc").slideToggle(); // toggle social description when button is clicked
     $("#econ_desc, #tech_desc, #imp_desc").slideUp(); // hide other descriptions
   });
 
   $("#tech").click(function(){
+	$(".tech-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
     $("#tech_desc").slideToggle(); // toggle technological description when button is clicked
     $("#econ_desc, #soc_desc, #imp_desc").slideUp(); // hide other descriptions
   });
 
   $("#implication").click(function(){
+	$(".implication-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
     $("#imp_desc").slideToggle(); // toggle implications/areas of opportunity description when button is clicked
     $("#econ_desc, #soc_desc, #tech_desc").slideUp(); // hide other descriptions
   });
@@ -114,7 +117,7 @@ $(document).ready(function(){
 
 										
 
-										<button id="economic" style="float: left; width: 100%; display: block; ">Economic Trends <span class="fas fa-caret-right"></span></button><br><br>           <!-- create collapsible buttons for each topic -->
+										<button id="economic" style="float: left; width: 100%; display: block; ">Economic Trends <span class="fas fa-caret-right economic-arrow"></span></button><br><br>           <!-- create collapsible buttons for each topic -->
 										<div id="econ_desc" style="text-align: justify; display: none;">                      <!-- hide all descriptions by default -->
 											<p style="text-align: justify;">
 												According to the most recent data available from Statistics Canada, Canadians donated a total of $10.4 billion to charitable and non-profit organizations in 2018 (Statistics Canada, 2020). This represents a slight increase from the previous year's donation total of $10.2 billion.</p>
@@ -135,7 +138,7 @@ $(document).ready(function(){
 
 										</div>
 
-										<button id="social" style="float: left; width: 100%; display: block; ">Social and Demographic Trends <span class="fas fa-caret-right"></span></button><br><br>
+										<button id="social" style="float: left; width: 100%; display: block; ">Social and Demographic Trends <span class="fas fa-caret-right social-arrow"></span></button><br><br>
 
 										<style>
 											#economic .fas.fa-caret-down {
@@ -161,7 +164,7 @@ $(document).ready(function(){
 											<p>Overall, Canadians tend to have a positive view of giving to charities, with surveys indicating that the majority of Canadians view charitable giving as an important part of their personal values and beliefs (Imagine Canada, 2020). However, there is also some skepticism around the effectiveness and transparency of charities, with many Canadians expressing concern about where their donations are going and how they are being used. This has led to a growing emphasis on transparency and accountability in the charitable sector, as well as increased scrutiny of charitable organizations by both the public and regulatory bodies.</p>
 										</div>
 
-										<button id="tech" style="float: left; width: 100%; display: block; ">Technological Trends <span class="fas fa-caret-right"></span></button><br><br>
+										<button id="tech" style="float: left; width: 100%; display: block; ">Technological Trends <span class="fas fa-caret-right tech-arrow"></span></button><br><br>
 										<div id="tech_desc" style="text-align: justify; display: none;">                        <!-- hide all descriptions by default -->
 											<p>Technology has had a significant impact on how Canadians donate to charities and non-profit organizations. Online giving platforms have made it easier and more convenient for Canadians to donate to causes they care about, regardless of their location or schedule. In addition, social media has become an increasingly popular way for Canadians to learn about and engage with charitable causes, with many organizations using social media platforms to promote their campaigns and connect with potential donors.</p>
 											<p>Mobile giving has also become more prevalent in recent years, with many Canadians using their smartphones and other mobile devices to donate to charities on-the-go. This has made it easier for Canadians to support causes they care about in real-time, such as in response to natural disasters or other emergencies.</p>
@@ -169,7 +172,7 @@ $(document).ready(function(){
 											<p>Overall, technology has made charitable giving more accessible, convenient, and interactive for Canadians. It has also opened up new avenues for engagement and collaboration between charities and their supporters, enabling more creative and effective approaches to fundraising and advocacy. As technology continues to evolve, it is likely that we will see even more innovation in the charitable sector and new ways for Canadians to support the causes they care about.</p>
 										</div>
 
-										<button id="implication" style="float: left; width: 100%; display: block; ">Implications/Areas of Opportunity <span class="fas fa-caret-right"></span></button><br><br>
+										<button id="implication" style="float: left; width: 100%; display: block; ">Implications/Areas of Opportunity <span class="fas fa-caret-right implication-arrow"></span></button><br><br>
 										<div id="imp_desc" style="text-align: justify; display: none;">                          <!-- hide all descriptions by default -->
 											<p>Through this analysis, several observations can be made that have implications for the philanthropic area of mental health and addiction support, which is the focus of our team's chosen charity, The Centre for Addiction and Mental Health (CAMH).</p>
 											<p>Firstly, there is a growing recognition of the importance of mental health and social justice causes in the charitable market, which may present opportunities for CAMH to increase its visibility and engagement with potential donors. However, it is important for CAMH to be proactive in communicating its mission and impact to potential donors, and to develop creative and innovative approaches to fundraising and advocacy that resonate with these causes.</p>
@@ -280,6 +283,7 @@ function toggleCollapsible(elementId) {
     element.style.display = 'none';
   }
 }
+// $(".economic-arrow").toggleClass("fa-caret-right fa-caret-down"); // toggle arrow class
 </script>
 
 						<section id="two" class="wrapper alt spotlight style2">
@@ -533,18 +537,18 @@ function myFunction1() {
 							</form>
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Sheridan College<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
+									Hazel McCallion Campus, Sheridan College<br />
+									4180 Duke of York Boulevard, <br />
+									Mississauga, ON L5B 0G5
 								</li>
 								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@sheridan.com</a></li>
+								<li class="icon solid fa-envelope"><a href="#">information@mentalhealthallies.com</a></li>
 								<li class="icon brands fa-twitter"><a href="#">twitter.com/</a></li>
 								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/</a></li>
 								<li class="icon brands fa-instagram"><a href="#">instagram.com/</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Mental Health Allies. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
